@@ -34,9 +34,9 @@ namespace avd4
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseDatabaseErrorPage();
-                app.UseDeveloperExceptionPage();
-           
+            app.UseDeveloperExceptionPage();
+            // app.UseDatabaseErrorPage();
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+
 using avd4.Data;
 
 namespace avd4
@@ -35,7 +36,7 @@ namespace avd4
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseDeveloperExceptionPage();
-            // app.UseDatabaseErrorPage();
+            
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

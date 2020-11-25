@@ -24,6 +24,13 @@ namespace avd4.Data
             modelBuilder.Entity<Pedido>()
                 .HasKey(x => x.Id)
                 .HasName("PrimaryKey_Id");
+
+            modelBuilder.Entity<Entrega>()
+                 .HasOne(p => p.Pedido)
+                 .WithMany(e => e.Entregas)
+                 .OnDelete(DeleteBehavior.Cascade);
+
+
         }
     }
 }

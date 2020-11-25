@@ -7,6 +7,7 @@ namespace avd4.Models
         public int id {get; set;}
         public DateTime DataHora {get; set;}
 
+     
         public Pedido Pedido {get; set;}
     }
 }

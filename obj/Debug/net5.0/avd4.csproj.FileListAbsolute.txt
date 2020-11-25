@@ -257,3 +257,4 @@ C:\Users\Daniel\Desktop\avd4\obj\Debug\net5.0\Razor\Views\Entrega\Delete.cshtml.
 C:\Users\Daniel\Desktop\avd4\obj\Debug\net5.0\Razor\Views\Entrega\Details.cshtml.g.cs
 C:\Users\Daniel\Desktop\avd4\obj\Debug\net5.0\Razor\Views\Entrega\Edit.cshtml.g.cs
 C:\Users\Daniel\Desktop\avd4\obj\Debug\net5.0\Razor\Views\Entrega\Index.cshtml.g.cs
+C:\Users\Daniel\Desktop\avd4\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll

@@ -8,7 +8,7 @@ namespace avd4.Models
         public int Id { get; set; }
         public int ClienteId {get; set;}
         public int ProdutoId {get; set;}
-
+        
         public Cliente Cliente {get; set;}
         public Produto Produto {get; set;}
 

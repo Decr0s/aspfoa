@@ -22,8 +22,15 @@ namespace avd4.Controllers
         }
 
         // GET: Cliente
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            var clientes = from c in _context.Clientes
+                           select c;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                clientes = clientes.Where(c => c.Nome.Contains(searchString));
+            }
+
             return View(await _context.Clientes.ToListAsync());
         }
 

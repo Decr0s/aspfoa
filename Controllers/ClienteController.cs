@@ -28,10 +28,12 @@ namespace avd4.Controllers
                            select c;
             if (!String.IsNullOrEmpty(searchString))
             {
+             
                 clientes = clientes.Where(c => c.Nome.Contains(searchString));
+
             }
 
-            return View(await _context.Clientes.ToListAsync());
+            return View(await clientes.ToListAsync());
         }
 
         // GET: Cliente/Details/5
